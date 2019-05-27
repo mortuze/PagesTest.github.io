@@ -32,9 +32,17 @@
     left: 2vw;
     font-size: 2.7vh;
 }
+
 .titles li{
     margin-bottom: 3vh;
 }
+
+button {
+    all: inherit;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
 .section {
     display: none;
     clear: both;
@@ -45,23 +53,51 @@
     color: aliceblue;
 }
 
-.courseBlock {
+.section h2{
+    font-size: 3vw;
+}
+
+.contentBlock {
     padding-top: 2vh;
     text-align: center;
     float: left;
     width: calc(100vw/3);
     background-image:linear-gradient(to bottom, #77caef, rgba(222, 122, 49, 0.88) );
     color: aliceblue;
-    padding-bottom: 30px;
     font-size: 1.5vmax;
 }
-.courseBlock h2 {
-    font-size: 2vmax;
+.contentBlock h2 {
+    font-size: 2vw;
 }
 
-a {
-   all: inherit;
-    
+.workBlock {
+    width: calc(100vw/2);
+}
+.workblock > div {
+    display: table-cell;
+    vertical-align: bottom;
+}
+.workBlock h2{
+    display: inline-block;
+    text-align: left;
+}
+.workBlock h3{
+    display: inline-block;
+    font-size: 1.5vw;
+}
+.workBlock h5{
+    padding: 0px 0px 0px 0px;
+    font-size: 1.5vw;
+}
+.workBlock li{
+    margin-bottom: 2vh;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    text-align: left;
+    font-size: 1.5vw;
+}
+.workBlock ul{
+    margin-top: 1vh;
 }
 
 ion-icon {
@@ -73,13 +109,5 @@ ion-icon {
 .clearfix:after {
     content: "";
     display: table;
-    clear:both;   
-    border: 10px solid #97ffd7;
-}
-
-
-button {
-    all: inherit;
-    margin-bottom: 0;
-    cursor: pointer;
+    clear:both;
 }
