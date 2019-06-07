@@ -9,8 +9,8 @@
 
 # Fixes
 
-- [ ] Fixing different **contentBlock** heights for same row, with different amount of content
-- [ ] Fix issue where the the two **contentBlock** divs cant be shown side by side on some computers
+- [x] Fixing different **contentBlock** heights for same row, with different amount of content
+- [x] Fix issue where the the two **contentBlock** divs cant be shown side by side on some computers
 - [ ] Formatting of Work Experience
 - [ ] Formatting of Projects
 - [ ] Formatting of Education
