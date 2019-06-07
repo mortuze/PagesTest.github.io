@@ -56,22 +56,29 @@ function showJqurey(id,contentBlock,count){
     if(count%2 == 0){
         sectionsActive.push(id);
         $(id).slideDown("slow",function(){
-            heighTotal = (heighTotal + ($(id).outerHeight() + $(contentBlock).outerHeight(true)));
+            heighTotal = (heighTotal + ($(id).outerHeight(true) + $(contentBlock).outerHeight(true)));
             window.scrollTo({
                 top: (heighTotal),
                 behavior: 'smooth'
             });
-//            console.log("Add: "+ heighTotal);
+            console.log("id: "+ $(id).outerHeight(true));
+            console.log("content: "+ $(contentBlock).outerHeight(true));
+            console.log("Add: "+ heighTotal);
         });
-    }
-    if(count%2 == 1){
-        heighTotal = (heighTotal + ($(id).outerHeight() + $(contentBlock).outerHeight(true)));
-        sectionsActive.pop();
-        $(id).slideUp("slow");
-//       console.log("Sub: "+heighTotal);
+        
+        
         
     }
-//    console.log("End: "+heighTotal);
+    if(count%2 == 1){
+        
+        sectionsActive.pop();
+        $(id).slideUp("slow",function(){
+            heighTotal = (heighTotal - ($(id).outerHeight(true) + $(contentBlock).outerHeight(true)));
+        });
+       console.log("Sub: "+heighTotal);
+        
+    }
+    console.log("End: "+ this.heighTotal);
     count++;
     console.log(count);
     return count;
@@ -80,18 +87,30 @@ function showJqurey(id,contentBlock,count){
 var countJobs = 0;
 function showJobs(){
     countJobs = showJqurey("#jobs","#jobsContentBlock",countJobs);
+    console.log("minHeight", $('#jobsContentBlock').height());
+    var minHeight = $('#jobsContentBlock').outerHeight(true);
+    $('.workBlock').css("min-height",minHeight);
 }
 
 var countProjects = 0;
 function showProjects(){
     countProjects = showJqurey("#projects","#projectsContentBlock",countProjects);
+    console.log("minHeight", $('#projectsContentBlock').height());
+    var minHeight = $('#projectsContentBlock').outerHeight(true);
+    $('.projectBlock').css("min-height",minHeight);
 }
 var countEducation = 0;
 function showEducation(){
     countEducation = showJqurey("#education","#educationContentBlock",countEducation);
+    console.log("minHeight", $('#educationContentBlock').height());
+    var minHeight = $('#educationContentBlock').outerHeight(true);
+    $('.educationBlock').css("min-height",minHeight);
 }
 
 var countAbout = 0;
 function showAbout(){
     countAbout = showJqurey("#about","#aboutContentBlock",countAbout);
+    //console.log("minHeight", $('#aboutContentBlock').height());
+    var minHeight = $('#aboutContentBlock').outerHeight(true);
+    $('.aboutBlock').css("min-height",minHeight);
 }

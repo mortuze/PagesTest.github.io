@@ -1,9 +1,11 @@
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
     font-family: 'Open Sans', sans-serif;
     scroll-behavior: smooth;
+    overflow-x: hidden;
+/*    Get that sleek look overflow-y: hidden;*/
 }
 
 .mainPage{
@@ -61,45 +63,49 @@ button {
     padding-top: 2vh;
     text-align: center;
     float: left;
-    width: calc(100vw/3);
     background-image:linear-gradient(to bottom, #77caef, rgba(222, 122, 49, 0.88) );
     color: aliceblue;
     font-size: 1.5vmax;
 }
 .contentBlock h2 {
     font-size: 2vw;
-}
-
-.workBlock {
-    width: calc(100vw/2);
-}
-.workblock > div {
-    display: table-cell;
-    vertical-align: bottom;
-}
-.workBlock h2{
     display: inline-block;
     text-align: left;
 }
-.workBlock h3{
+.contentBlock h3{
     display: inline-block;
     font-size: 1.5vw;
 }
-.workBlock h5{
+.contentBlock h5{
     padding: 0px 0px 0px 0px;
     font-size: 1.5vw;
 }
-.workBlock li{
+.contentBlock li{
     margin-bottom: 2vh;
     padding-left: 3vw;
     padding-right: 3vw;
     text-align: left;
     font-size: 1.5vw;
 }
-.workBlock ul{
+.contentBlock ul{
     margin-top: 1vh;
 }
 
+.workBlock {
+    width: 50%;
+}
+
+.projectBlock{
+    width: 50%;
+}
+
+.educationBlock{
+    padding-top: 0;
+    width: 33.333333%;
+}
+.aboutBlock {
+    width: 100%;
+}
 ion-icon {
     font-size: 6vmax;
     background-color: rgba(222, 122, 49, 0.87);
@@ -110,4 +116,9 @@ ion-icon {
     content: "";
     display: table;
     clear:both;
+}
+
+a {
+    all: inherit;
+    cursor: pointer;
 }
