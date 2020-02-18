@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    /*    Get that sleek look overflow-y: hidden;*/
+}
+
+.mainPage {
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-image: linear-gradient(to bottom, rgba(5, 27, 118, 0.35), rgba(44, 1, 1, 0.6)), url("mainImage2.jpeg");
+    position: relative;
+}
+
+.titles {
+    color: #ecf0f1;
+}
+
+.titles h1 {
+    position: absolute;
+    top: 2vh;
+    left: 1.5vw;
+    font-size: 4vmax;
+    font-weight: 100;
+}
+
+.titles ul {
+    position: absolute;
+    top: 73vh;
+    left: 2vw;
+    font-size: 2.7vh;
+}
+
+.titles li {
+    margin-bottom: 3vh;
+}
+
+button {
+    all: inherit;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+.section {
+    display: none;
+    clear: both;
+    border-top: 5px solid black;
+    /*    padding-top: 2vh;*/
+    text-align: center;
+    background-color: rgba(5, 27, 118, 0.65);
+    color: aliceblue;
+}
+
+.section h2 {
+    font-size: 2vmax;
+}
+
+.contentBlock {
+    /*    padding-top: 2vmax;*/
+    text-align: center;
+    float: left;
+    background-image: linear-gradient(to bottom, rgba(5, 27, 118, 0.15), rgba(44, 1, 1, 0.6));
+    color: aliceblue;
+    font-size: 1vmax;
+}
+
+.contentBlock h2 {
+    font-size: 1.5vmax;
+    display: inline-block;
+    text-align: left;
+}
+
+.contentBlock h3 {
+    display: inline-block;
+    font-size: 0.9vmax;
+}
+
+.contentBlock h5 {
+    padding: 0px 0px 0px 0px;
+    font-size: 0.8vmax;
+}
+
+.contentBlock li {
+    margin-bottom: 2vh;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    text-align: left;
+    font-size: 1.5vw;
+}
+
+.contentBlock ul {
+    margin-top: 1vh;
+}
+
+.workBlock {
+    width: 50%;
+}
+
+.projectBlock {
+    width: 50%;
+}
+
+.educationBlock {
+    padding-top: 0;
+    margin-top: 0;
+    width: 33.333333%;
+}
+
+.aboutBlock {
+    width: 100%;
+}
+
+ion-icon {
+    font-size: 6vmax;
+    background-color: rgba(222, 122, 49, 0.87);
+    border-radius: 30px;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+a {
+    all: inherit;
+    cursor: pointer;
+}

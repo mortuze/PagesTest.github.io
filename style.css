@@ -49,36 +49,36 @@ button {
     display: none;
     clear: both;
     border-top: 5px solid black;
-    padding-top: 2vh;
+/*    padding-top: 2vh;*/
     text-align: center;
-    background-color: #77caef;
+    background-color: rgba(5, 27, 118,0.65);
     color: aliceblue;
 }
 
 .section h2{
-    font-size: 3vw;
+    font-size: 2vmax;
 }
 
 .contentBlock {
-    padding-top: 2vh;
+/*    padding-top: 2vmax;*/
     text-align: center;
     float: left;
-    background-image:linear-gradient(to bottom, #77caef, rgba(222, 122, 49, 0.88) );
+    background-image:linear-gradient(to bottom, rgba(5, 27, 118, 0.15),  rgba(44, 1, 1, 0.6) );
     color: aliceblue;
-    font-size: 1.5vmax;
+    font-size: 1vmax;
 }
 .contentBlock h2 {
-    font-size: 2vw;
+    font-size: 1.5vmax;
     display: inline-block;
     text-align: left;
 }
 .contentBlock h3{
     display: inline-block;
-    font-size: 1.5vw;
+    font-size: 0.9vmax;
 }
 .contentBlock h5{
     padding: 0px 0px 0px 0px;
-    font-size: 1.5vw;
+    font-size: 0.8vmax;
 }
 .contentBlock li{
     margin-bottom: 2vh;
@@ -101,6 +101,7 @@ button {
 
 .educationBlock{
     padding-top: 0;
+    margin-top: 0;
     width: 33.333333%;
 }
 .aboutBlock {
